@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col s6 offset-s2">
+    <div class="card">
+      <div class="input-field">
+        <input type="text" id="search" ng-model="friendsModel.date">
+        <label for="search">Search</label>
+      </div>
+      <table class="striped centered">
+        <thead>
+        <tr>
+          <th data-field="name">Name</th>
+          <th data-field="bday">Birthday</th>
+          <th data-field="show">Show</th>
+          <th data-field="update">Update</th>
+          <th data-field="delete">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="friend in friends | filter: friendsModel.date">
+          <td ng-bind="friend.first_name + ' ' + friend.last_name"></td>
+          <td ng-bind="friend.birthday | date: dd/MM/yyyy"></td>
+          <td><a href="#!/show/{{friend._id}}">Show</a></td>
+          <td><a href="#!/edit/{{friend._id}}">Edit</a></td>
+          <td><a href="#!" ng-click="friendDelete(friend._id)">Delete</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

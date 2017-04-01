@@ -1,0 +1,21 @@
+{
+  "name": "Mean_Friends",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Victor Adu <aduvictor@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Victor-Adu/basic-interactions-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4"
+  }
+}

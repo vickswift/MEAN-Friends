@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <h4>Change a Friend</h4>
+      <form ng-submit="update()">
+        <div class="input-field">
+          <input type="text" class="validate" ng-model="updateFriend.first_name" ng-value="friend.first_name" name="first_name" id="first_name">
+        </div>
+        <div class="input-field">
+          <input type="text" class="validate" ng-model="updateFriend.last_name" ng-value="friend.last_name" name="last_name" id="last_name">
+        </div>
+        <div class="input-field">
+          <input type="date" ng-model="updateFriend.birthday" class="right-align" ng-value="friend.birthday" name="birthday" id="birthday">
+          <label for="birthday">Birthday: {{friend.birthday | date: yyyy-MM-dd}}</label>
+        </div>
+        <div class="input-field">
+          <input type="submit" class="btn black" value="Update Friend">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

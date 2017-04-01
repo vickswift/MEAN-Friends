@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <h4>Make a Friend</h4>
+      <form ng-submit="create()">
+        <div class="input-field">
+          <input type="text" class="validate" ng-model="newFriend.first_name" name="first_name" id="first_name">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" class="validate" ng-model="newFriend.last_name" name="last_name" id="last_name">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field">
+          <input type="date" class="right-align" ng-model="newFriend.birthday" name="date" id="birthday">
+          <label for="birthday">Birthday</label>
+        </div>
+        <div class="input-field">
+          <input type="submit" value="Add Friend" class="btn green">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
